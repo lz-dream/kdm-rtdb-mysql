@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>cn.oge.kdm.rtdb</groupId>
+		<artifactId>kdm-rtdb-server</artifactId>
+		<version>4.2.2</version>
+		<relativePath />
+	</parent>
+
+	<artifactId>kdm-rtdb-mysql-server-block</artifactId>
+	<version>1.0.1</version>
+	
+	<properties>
+		<name>kdm-rtdb-mysql-block</name>
+		<maven.deploy.skip>true</maven.deploy.skip>
+		<maven.install.skip>true</maven.install.skip>
+	</properties>
+
+	<dependencies>
+		<!-- Kdm Rtdb -->
+		<dependency>
+			<groupId>cn.oge.kdm.rtdb</groupId>
+			<artifactId>kdm-rtdb-mysql-adapter</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+	</dependencies>
+	
+	<repositories>
+		<repository>
+			<id>kdm</id>
+			<url>http://mvn.orientge.cn:2080/content/groups/kdm</url>
+			<snapshots>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
+	</repositories>
+</project>
